@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_radius">15dp</dimen>
+    <dimen name="white_border">4dp</dimen>
+    <dimen name="title_font_size">24sp</dimen>
+    <dimen name="body_font_size">16sp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="spacing_height_30dp">30dp</dimen>
+    <dimen name="toolbar_background_height">250dp</dimen>
+    <dimen name="context_form_margin_8dp">8dp</dimen>
+    <dimen name="button_margin_24dp">24dp</dimen>
+    <dimen name="title_height_64dp">64dp</dimen>
+    <dimen name="circle_size_100dp">100dp</dimen>
+    <dimen name="icon_size_50dp">50dp</dimen>
+    <dimen name="cover_height_200dp">200dp</dimen>
+</resources>
