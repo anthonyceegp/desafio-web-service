@@ -1,4 +1,4 @@
-package com.example.marvelheroes.login
+package com.example.marvelheroes.login.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
-import com.example.marvelheroes.HomeActivity
+import com.example.marvelheroes.comiclist.views.HomeActivity
 import com.example.marvelheroes.R
 
 class LogInFragment : Fragment() {

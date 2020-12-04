@@ -1,4 +1,4 @@
-package com.example.marvelworld.api.models
+package com.example.marvelheroes.api.models
 
 data class DataWrapper<T>(
     val code: Int,

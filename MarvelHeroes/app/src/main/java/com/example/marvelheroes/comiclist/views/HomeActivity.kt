@@ -1,9 +1,11 @@
-package com.example.marvelheroes
+package com.example.marvelheroes.comiclist.views
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import com.example.marvelheroes.R
+import com.example.marvelheroes.login.views.MainActivity
 
 class HomeActivity : AppCompatActivity() {
     private val navController by lazy { findNavController(R.id.nav_host_fragment_container) }

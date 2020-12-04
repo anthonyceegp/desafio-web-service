@@ -1,4 +1,4 @@
-package com.example.marvelheroes.registration
+package com.example.marvelheroes.login.views
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupActionBarWithNavController
-import com.example.marvelheroes.HomeActivity
+import com.example.marvelheroes.comiclist.views.HomeActivity
 import com.example.marvelheroes.R
 import com.google.android.material.appbar.MaterialToolbar
 

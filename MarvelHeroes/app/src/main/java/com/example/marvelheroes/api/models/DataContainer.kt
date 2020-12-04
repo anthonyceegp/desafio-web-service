@@ -1,4 +1,4 @@
-package com.example.marvelworld.api.models
+package com.example.marvelheroes.api.models
 
 data class DataContainer<T>(
     val offset: Int,

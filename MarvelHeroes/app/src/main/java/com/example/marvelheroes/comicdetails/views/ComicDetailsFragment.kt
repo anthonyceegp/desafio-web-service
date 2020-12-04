@@ -1,5 +1,6 @@
-package com.example.marvelheroes.comicdetails
+package com.example.marvelheroes.comicdetails.views
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,6 +17,7 @@ import com.example.marvelheroes.R
 import com.example.marvelheroes.api.utils.Constant
 import com.example.marvelheroes.api.utils.ImageUtil
 import com.example.marvelheroes.comiclist.models.Comic
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat
@@ -33,6 +34,7 @@ class ComicDetailsFragment : Fragment() {
     private lateinit var publishingDate: TextView
     private lateinit var price: TextView
     private lateinit var pages: TextView
+    private lateinit var collapsingToolbarLayout: CollapsingToolbarLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -53,10 +55,15 @@ class ComicDetailsFragment : Fragment() {
         publishingDate = view.findViewById(R.id.publishing_date)
         price = view.findViewById(R.id.price)
         pages = view.findViewById(R.id.pages)
+        collapsingToolbarLayout = view.findViewById(R.id.collapsing_toolbar_layout)
+
+        collapsingToolbarLayout.setExpandedTitleColor(Color.TRANSPARENT)
+        title.text = comic.title
+        description.text = comic.description
 
         initToolbar(view)
 
-        var backgroundImage = comic.images?.firstOrNull()
+        var backgroundImage = comic.images.firstOrNull()
         if (backgroundImage == null) {
             backgroundImage = comic.thumbnail
         }
@@ -84,9 +91,6 @@ class ComicDetailsFragment : Fragment() {
             ).show(childFragmentManager, "add_image_dialog")
         }
 
-        title.text = comic.title
-        description.text = comic.description
-
         val date = comic.dates?.first { d -> d.type == Constant.ON_SALE_DATE }?.date
         if (date != null) {
             publishingDate.text = SimpleDateFormat(Constant.DATE_FORMAT, Locale.US)
@@ -110,9 +114,11 @@ class ComicDetailsFragment : Fragment() {
         val toolbar = view.findViewById<MaterialToolbar>(R.id.toolbar)
         val activity = activity as AppCompatActivity
 
+        toolbar.title = comic.title
+
         activity.setSupportActionBar(toolbar)
 
-        activity.supportActionBar?.setDisplayShowTitleEnabled(false)
+        activity.supportActionBar?.setDisplayShowTitleEnabled(true)
 
         navController = findNavController()
         appBarConfiguration = AppBarConfiguration(navController.graph)

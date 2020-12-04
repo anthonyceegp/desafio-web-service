@@ -1,8 +1,9 @@
-package com.example.marvelheroes
+package com.example.marvelheroes.login.views
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
+import com.example.marvelheroes.R
 
 class MainActivity : AppCompatActivity() {
 

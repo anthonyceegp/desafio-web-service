@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/space_16dp"
-    tools:context=".comicdetails.ComicDialogFragment">
+    tools:context=".comicdetails.views.ComicDialogFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

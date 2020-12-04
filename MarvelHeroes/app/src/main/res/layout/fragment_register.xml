@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registration.RegisterFragment">
+    tools:context=".login.views.RegisterFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -74,7 +74,6 @@
                         android:hint="@string/name">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/name_register"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
@@ -89,7 +88,6 @@
                         android:hint="@string/email">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/email_register"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
@@ -104,7 +102,6 @@
                         android:hint="@string/password">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/password_register"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"

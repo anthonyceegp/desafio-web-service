@@ -1,7 +1,7 @@
-package com.example.marvelworld.comiclist.repository
+package com.example.marvelheroes.comiclist.repository
 
 import com.example.marvelheroes.comiclist.models.Comic
-import com.example.marvelworld.api.models.DataWrapper
+import com.example.marvelheroes.api.models.DataWrapper
 import retrofit2.http.GET
 import retrofit2.http.Query
 

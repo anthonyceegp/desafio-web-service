@@ -1,4 +1,4 @@
-package com.example.marvelheroes.comicdetails
+package com.example.marvelheroes.comicdetails.views
 
 import android.os.Bundle
 import android.view.LayoutInflater
